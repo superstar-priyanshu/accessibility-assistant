@@ -1,0 +1,264 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5; /* Softer background */
+  color: #333; /* Text contrast */
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 300px; /* Prevent layout break on small screens */
+  line-height: 1.5; /* Better readability */
+}
+
+/* Header */
+h1 {
+  font-size: 24px;
+  margin: 20px 0;
+  color: #00487c; /* Accessible high-contrast color */
+  font-weight: bold;
+}
+
+/* Textarea */
+#inputText {
+  width: 90%;
+  height: 100px;
+  margin: 10px auto;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #ffffff; /* White for readability */
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  resize: none;
+}
+
+#inputText:focus {
+  outline: none;
+  border-color: #0077b6; /* Highlight on focus */
+  box-shadow: 0 0 8px rgba(0, 119, 182, 0.3);
+}
+
+/* Button */
+button {
+  display: inline-block;
+  margin: 5px; /* Add space between buttons */
+  padding: 8px 12px; /* Adjust padding for a smaller size */
+  font-size: 14px; /* Consistent font size */
+  font-weight: bold;
+  color: #fff; /* White text */
+  background-color: #007BFF; /* Accessible blue color */
+  border: none; /* No borders */
+  border-radius: 4px; /* Rounded corners for modern look */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+button:focus {
+  outline: 2px solid #ffc107; /* Add yellow outline for focus state */
+  outline-offset: 2px;
+}
+#readAloudButton {
+  margin-top: 10px; /* Add some spacing */
+}
+
+
+button:disabled {
+  background-color: #cccccc; /* Disabled button color */
+  cursor: not-allowed;
+}
+
+/* Output Container */
+/* Output Container */
+/* Output Container */
+#output-container {
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%;
+  border: 2px solid #005f73;
+  border-radius: 8px;
+  background-color: #edf6f9;
+  text-align: left;
+  position: relative; /* Allow positioning of buttons */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons inside the output box */
+#output-controls {
+  position: absolute;
+  top: 10px;
+  right: 10px; /* Align to top-right */
+  display: flex;
+  gap: 5px; /* Spacing between buttons */
+}
+
+.small-button {
+  padding: 5px;
+  font-size: 12px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.small-button:hover {
+  background-color: #0096c7;
+}
+
+.small-button:focus {
+  outline: 2px solid #023e8a; /* Accessible focus outline */
+}
+/* Button Container */
+.button-container {
+  text-align: center; /* Center all buttons */
+  margin: 10px auto; /* Add spacing around the button container */
+}
+
+
+/* General Button Styling */
+#button-container button {
+  padding: 10px 15px;
+  font-size: 14px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#button-container button:hover {
+  background-color: #0096c7;
+}
+
+#button-container button:focus {
+  outline: 2px solid #023e8a; /* Accessible focus outline */
+}
+
+/* Specific Button Styling (Optional for Icons) */
+#recordVoiceButton {
+  font-size: 16px; /* Slightly larger for the icon */
+  background-color: #1d3557;
+}
+
+#readAloudButton {
+  font-size: 16px;
+  background-color: #457b9d;
+}
+
+#stopButton {
+  font-size: 16px;
+  background-color: #e63946;
+}
+
+
+/* Output Text */
+#outputText {
+  margin-top: 20px; /* Space below the buttons */
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+/* Output Text */
+#outputText {
+  font-size: 16px; /* Accessible font size */
+  line-height: 1.6; /* Improve readability */
+  color: #333; /* Text color */
+  white-space: pre-wrap; /* Preserve formatting and newlines */
+}
+
+#outputText p {
+  margin-bottom: 10px; /* Spacing between paragraphs */
+}
+
+#outputText strong {
+  color: #0077b6; /* Highlighted text color */
+  font-weight: bold;
+}
+
+#outputText a {
+  color: #005f73; /* Accessible link color */
+  text-decoration: underline;
+}
+
+#outputText a:hover {
+  color: #023e8a;
+  text-decoration: none;
+}
+
+
+/* Loading Spinner */
+#loadingSpinner {
+  font-size: 16px;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Error Message */
+#errorMessage {
+  font-size: 14px;
+  color: #d9534f; /* Red for errors */
+  margin-top: 10px;
+}
+#recordVoiceButton {
+  padding: 5px;
+  font-size: 14px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px; /* Spacing next to the input box */
+  transition: background-color 0.3s ease;
+}
+
+#recordVoiceButton:hover {
+  background-color: #0096c7;
+}
+
+#recordVoiceButton:focus {
+  outline: 2px solid #023e8a; /* Accessible focus outline */
+}
+
+
+/* Add Responsive Design */
+@media (max-width: 600px) {
+  #inputText {
+    height: 80px;
+  }
+
+  button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  #output-container {
+    padding: 10px;
+  }
+
+  #output-container h3 {
+    font-size: 16px;
+  }
+}
+/* High Contrast Mode */
+.high-contrast {
+  background-color: black !important;
+  color: white !important;
+  filter: invert(100%);
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212 !important;
+  color: #e0e0e0 !important;
+}
+

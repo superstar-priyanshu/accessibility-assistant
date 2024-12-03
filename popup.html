@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Assistant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Accessibility Assistant</h1>
+  
+  <div>
+    <textarea id="inputText" placeholder="Enter you text..."></textarea>
+    <!-- <button id="recordVoiceButton" class="small-button">🎙</button> -->
+  </div>
+  
+  
+  <div id="button-container">
+    <button id="simplifyButton">Chat</button>
+    <button id="summarizeButton">Summarize Text</button>
+    <button id="rewriteButton">Rewrite Text</button>
+    <button id="recordVoiceButton">🎙 Speak</button>
+    <button id="navigateButton">Navigate to Website</button>
+    <button id="chatWithAIButton">Speak to Navigate</button>
+    <button id="contrastButton">Adjust Contrast</button>
+    <button id="increaseTextButton">Increase Text Size</button>
+    <button id="decreaseTextButton">Decrease Text Size</button>
+    <button id="highlightLinksButton">Highlight Links</button>
+    <button id="darkModeButton">Toggle Dark Mode</button>
+  </div>
+  
+
+
+  
+  <div id="output-container">
+    <h3>Output:</h3>
+    <div id="output-controls">
+      <button id="readAloudButton" class="small-button">🔊</button>
+      <button id="stopButton" class="small-button">⏹</button>
+    </div>
+    <div id="outputText"></div>
+  </div>
+  
+
+
+  <div id="loadingSpinner" style="display:none;">Loading...</div>
+  <div id="errorMessage" style="display:none; color:red;"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

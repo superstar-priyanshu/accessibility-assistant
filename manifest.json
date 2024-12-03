@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "Accessibility Assistant",
+    "version": "1.0",
+    "description": "A Chrome extension that makes web content accessible to people with disabilities.",
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "storage"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icons/accessibility-16.png",
+      "48": "icons/accessibility-48.png",
+      "128": "icons/accessibility-128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/accessibility-16.png",
+        "48": "icons/accessibility-48.png",
+        "128": "icons/accessibility-128.png"
+        }
+    },
+    "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content.js"]
+  }
+],
+    "web_accessible_resources": [
+      {
+        "resources": ["icons/*"],
+        "matches": ["https://*/*", "http://*/*"]
+      }
+    ],
+    "content_security_policy": {
+      "extension_pages": "default-src 'self'; connect-src http://127.0.0.1:5000"
+    }
+  }
+  
